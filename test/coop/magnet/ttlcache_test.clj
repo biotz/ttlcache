@@ -149,4 +149,3 @@
                     (assoc :a {:val 1 :ttl 500})
                     ^PerItemTTLCache (sleepy 700)
                     (. lookup :a)))))))
-
