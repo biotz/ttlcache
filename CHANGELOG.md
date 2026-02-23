@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ## [UNRELEASED]
 ### Changed
 - Removed the unit tests with the performance comparisons with clojure/core.cache
+- Updated Clojure version to 1.12.4
+- Upgraded dependencies
 
 ## [0.2.0] - 2021-05-07
 ### Changed

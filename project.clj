@@ -3,10 +3,10 @@
   :url "https://github.com/magnetcoop/ttlcache"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.10.0"]
-                 [org.clojure/core.cache "1.0.207"]
-                 [criterium "0.4.6"]
-                 [org.clojure/data.priority-map "1.0.0"]]
+  :dependencies [[org.clojure/clojure "1.12.4"]
+                 [org.clojure/core.cache "1.2.254"]
+                 [criterium/criterium "0.4.6"]
+                 [org.clojure/data.priority-map "1.2.1"]]
   :deploy-repositories [["snapshots" {:url "https://clojars.org/repo"
                                       :username :env/clojars_username
                                       :password :env/clojars_password
@@ -25,5 +25,5 @@
    :repl {:repl-options {:host "0.0.0.0"
                          :port 4001}}
    :profiles/dev {}
-   :project/dev {:plugins [[jonase/eastwood "0.3.14"]
-                           [lein-cljfmt "0.7.0"]]}})
+   :project/dev {:plugins [[jonase/eastwood "1.4.3"]
+                           [lein-cljfmt/lein-cljfmt "0.9.2"]]}})
