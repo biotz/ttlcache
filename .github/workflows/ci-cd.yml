@@ -1,4 +1,5 @@
- name: ci-cd
+name: ci-cd
+
 on:
   push:
     paths-ignore:
