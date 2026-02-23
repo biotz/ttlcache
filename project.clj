@@ -23,7 +23,7 @@
   :profiles
   {:dev [:project/dev :profiles/dev]
    :repl {:repl-options {:host "0.0.0.0"
-                         :port 4001}}
+                         :port 4002}}
    :profiles/dev {}
    :project/dev {:plugins [[jonase/eastwood "1.4.3"]
                            [lein-cljfmt/lein-cljfmt "0.9.2"]]}})

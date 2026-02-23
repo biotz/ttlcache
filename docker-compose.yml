@@ -1,0 +1,23 @@
+services:
+  app:
+    image: local/ttlcache/dev:latest
+    build:
+      context: .
+      target: "dev"
+    command:
+      - bash
+      - -c
+      - 'env JAVA_OPTS="-Djdk.attach.allowAttachSelf -XshowSettings:vm -XX:+UnlockExperimentalVMOptions -XX:+UseContainerSupport -XX:MaxRAMPercentage=70.0 -server" lein repl :headless'
+    ports:
+      - mode: ingress
+        target: 4002
+        published: 4002
+        protocol: tcp
+    volumes:
+      - ".:/app"
+      - "~/.m2:/root/.m2"
+      - "~/.m2:/home/hop/.m2"
+    deploy:
+      resources:
+        limits:
+          memory: 1024m
