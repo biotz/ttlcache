@@ -65,7 +65,7 @@
   This function also takes a `:get-ttl` keyword argument that defines
   a function which is applied to the key and value of any added entry,
   and is expected to return the TTL -in milli-seconds- for the entry."
-  [base & {get-ttl :ttl-getter}]
+  ^PerItemTTLCache [base & {get-ttl :ttl-getter}]
   {:pre [(map? base)
          (fn? get-ttl)]}
   (clojure.core.cache/seed (PerItemTTLCache. {} (priority-map) get-ttl) base))
@@ -77,7 +77,7 @@
   This function also allows an optional `:ttl` argument that defines the default
   time in milliseconds that entries are allowed to reside in the cache. If not
   specified, a default of 2000 milliseconds is used."
-  [base & {ttl :ttl :or {ttl 2000}}]
+  ^PerItemTTLCache [base & {ttl :ttl :or {ttl 2000}}]
   {:pre [(and (number? ttl) (<= 0 ttl))
          (map? base)]}
   (per-item-ttl-cache-factory base :ttl-getter (constantly ttl)))
