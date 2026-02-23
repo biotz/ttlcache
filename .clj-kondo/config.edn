@@ -1,6 +1,20 @@
-{:linters
- {:unsorted-required-namespaces {:level :warning}
-  :refer-all {:exclude #{clojure.test}}
-  :unused-binding {:exclude-destructured-keys-in-fn-args true}}
+{:skip-comments true
+
+ :linters
+ {:unsorted-required-namespaces
+  {:level :warning}
+
+  :refer-all
+  {:exclude #{clojure.test}}
+
+  :single-key-in
+  {:level :warning}
+
+  :used-underscored-binding
+  {:level :warning}
+
+  :redundant-fn-wrapper
+  {:level :warning}}
+
  :lint-as
  {clojure.core.cache/defcache clojure.core/defrecord}}
