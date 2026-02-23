@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [UNRELEASED]
+## [0.2.2] - 2026-02-23
+### Fixed
+- Github actions yaml file syntax
+
 ## [0.2.1] - 2026-02-23
 ### Changed
 - Removed the unit tests with the performance comparisons with clojure/core.cache
