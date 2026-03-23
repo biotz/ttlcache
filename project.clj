@@ -4,7 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.12.4"]
-                 [org.clojure/core.cache "1.2.254"]
+                 [org.clojure/core.cache "1.2.263"]
                  [criterium/criterium "0.4.6"]
                  [org.clojure/data.priority-map "1.2.1"]]
   :deploy-repositories [["snapshots" {:url "https://clojars.org/repo"

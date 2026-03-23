@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [UNRELEASED]
+### Changed
+- Upgraded org.clojure/core.cache to 1.2.263, that fixes a couple of cache-stampede issues.
+
 ## [0.2.2] - 2026-02-23
 ### Fixed
 - Github actions yaml file syntax
