@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [UNRELEASED]
 ### Changed
+- Upgraded org.clojure/core.cache to 1.2.999, that fixes an issue with (regular) TTL caches.
+
+## [0.2.3] - 2026-03-23
+### Changed
 - Upgraded org.clojure/core.cache to 1.2.263, that fixes a couple of cache-stampede issues.
 
 ## [0.2.2] - 2026-02-23
@@ -31,7 +35,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ## [0.1.0] - 2021-05-07
 - Original version forked from https://github.com/rkday/ttlcache
 
-[UNRELEASED]:  https://github.com/magnetcoop/buddy-auth.jwt-oidc/compare/v0.2.1..HEAD
+[UNRELEASED]:  https://github.com/magnetcoop/buddy-auth.jwt-oidc/compare/v0.2.3..HEAD
+[0.2.3]: https://github.com/magnetcoop/buddy-auth.jwt-oidc/compare/v0.2.2...v0.2.3
+[0.2.2]: https://github.com/magnetcoop/buddy-auth.jwt-oidc/compare/v0.2.1...v0.2.3
 [0.2.1]: https://github.com/magnetcoop/buddy-auth.jwt-oidc/compare/v0.1.0...v0.2.1
 [0.2.0]: https://github.com/magnetcoop/buddy-auth.jwt-oidc/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/magnetcoop/buddy-auth.jwt-oidc/releases/tag/v0.1.0
